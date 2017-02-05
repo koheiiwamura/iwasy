@@ -1,3 +1,137 @@
-// Place all the styles related to the articles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+header{
+  border-bottom: 1px solid #eee;
+  &__left {
+    float: left;
+  }
+  &__middle {
+    float : left;
+  }
+  &__right {
+    float: left
+  }
+}
+.footer-top {
+  background-color: $mainGrayColor;
+  padding: 25px 350px 15px 320px;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  img {
+    float: left;
+    width: 100px;
+  }
+  &__intro {
+    float: left;
+    width: 500px;
+    padding-right: 50px;
+    &--title {
+      font-size: 13px;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    &--content {
+      font-size: 12px;
+    }
+    &--app img {
+      display: block;
+      height: 40px;
+      width: 120px;
+      margin: 4px;
+      padding-top: 15px;
+    }
+  }
+}
+.footer-middle {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+  &:after {
+    clear: both;
+    display: block;
+    content: "";
+  }
+  &__sns {
+    height: 30px;
+    margin: 0 30px 0 350px;
+    font-size: 14px;
+    .fb-like {
+      height: 30px;
+      float: left;
+      color: blue;
+    }
+    .tw-like {
+      float: left;
+      margin-left: 30px;
+      color: #ccffff;
+    }
+    .propulsion {
+      background-color: $mainGrayColor;
+      border:1px solid #ddd;
+      border-radius: 5px;
+      position: relative;
+      font-size: 10px;
+      margin-left: 15px;
+      float: left;
+      padding: 2px;
+      color: $darkGrayColor;
+      }
+    .propulsion:before {
+      border-right: 12px solid $mainGrayColor;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      left: -10px;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 5px;
+      z-index: 1;
+    }
+    .propulsion:after {
+      border-right: 12px solid #ddd;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      left: -12px;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 5px;
+    }
+  }
+  img {
+    float: left;
+    width: 100px;
+    margin: 0 20px 0 160px;
+    display: inline-block;
+  }
+  table {
+    float: left;
+    font-size: 12px;
+    margin: 0 auto;
+    tr[ class="table__header" ] {
+      color: $darkGrayColor;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+  table, tr, td {
+      border-style: none;
+      padding: 4px 16px;
+  }
+}
+
+
+
+.footer-bottom {
+  color: $darkGrayColor;
+  font-size: 12px;
+  border-top: 1px solid #eee;
+  padding: 25px 180px 50px;
+  &__left {
+    float: left;
+  }
+  &__right {
+    float: right;
+  }
+}
